@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "scripts": {
+    "web": "npm start --prefix web",
+    "server": "npm start --prefix server",
+    "mobile": "npm start --prefix mobile",
+
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  }
+}
